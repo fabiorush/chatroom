@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MessageMe</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-e6c13ca3472cd9898a5451b599527043da814f9f44f2406c5fd23fd34d136070.ico" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="MTr4NtKA/5q36nGr7IaeNkZJGscChf8WeZMQzFvfMh0aYqEBlPlMeBlTXNcr+MjsdLAKnkGXd4XeEN9ZHn2pTg==" />
+    
+
+    <link rel="stylesheet" media="all" href="/assets/custom.self-e52760a357ccfd119e66a1417f970758bdb055b8db00661f05ae108c9b2cdd02.css?body=1" data-turbolinks-track="reload" />
+<link rel="stylesheet" media="all" href="/assets/application.self-f0d704deea029cf000697e2c0181ec173a1b474645466ed843eb5ee7bb215794.css?body=1" data-turbolinks-track="reload" />
+    <script src="/assets/rails-ujs.self-43e81c501e7e36871a34b4b950451cc7cb047af4e846ec742539e64724582452.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/activestorage.self-1ed4604ac2170045f1ffca4edb81a75246661555e4f9cf682bb8a21825e32e1c.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/api.self-5a9f7435c9a2447792f484e0a597e49685cbb8d9c1d52f62dc679b95e3a7eb8b.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/colorize.self-37d09baeb7c88ab3397e4a4ea3e42a018a3bd4d61af35a80f0c6ee8478e7cbc8.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/form.self-3c8ce221d7fb9d534720f70b36a8c52c570ea92e2897b3e365af853054987457.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/state.self-9a73278521b00e9d06e6f340715dbd0a37d19d87af1cb8614b2a4982abcdd91c.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/visibility.self-cfa34c4b8638a0c3ec019f21e90b14a44b384f1c9bf7862f134e7da83647c45d.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/visit.self-7caaf55fd801b602db0dcc84d4034e65e8eee6978aa05d87018c30a82a16e4ef.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/site.self-eed13aba11268689157ab770e530bab912fcbb2716f926e3bcea59e0f91bd8af.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/accordion.self-fe7ae88559b86879caa71a280da75212e314fa299dc905621ed061736accdff7.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/checkbox.self-1cad1a0547b2fc5f01fdbbbdf2d3f0726060e4c8cf539914b93a808803d6bf4c.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/dimmer.self-fda8179af3f6c799d44b4c97f67fbbb4cb8b7582bc096b3c036b5ba31664e94a.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/dropdown.self-c482c2ad5bd5fd53caa53f29feb09ba9531f2c05ccffd3ff73afd740e53b58c5.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/embed.self-dfc3966e3676a759be8956edd4ac61b1eb638c0c128a80f6022cc17d8b4b2135.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/modal.self-c180ab6434278e28552cf27074b90c688d288e4cb130bc850e82bb588bcac8cd.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/nag.self-380dbc2d4a4febe89fe5996cba9f1c278bd70f1f39bfb389ee53a660acb9aa63.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/popup.self-4d25567ec1fc60a34e1e2083fe62db04b236c0ba9cea27f4211ece63d770f8d1.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/progress.self-ffa9b922ed6b5a7952fb3aa34a709430174c7d9423cf3ba719a914ebc4553383.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/rating.self-913e09622a411a5cf6e8a60dcad586c98b079f658d17b14635681ee766cca73b.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/search.self-6a6bce96259b4bf5a70c47af2866895fa01a344335bebeed85503f1ad93af4c2.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/shape.self-49279360cac85ee97cb50569037fc4e394257e391b19e23ae6143cb79ca98b9f.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/sidebar.self-3cfb04b712d8e4534068dfb79211211891644ed3ba7199bc4741b21b601d8d6d.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/sticky.self-98b613150bc19857a642599119d78fa55f299f86a543569b7457aced5053be3e.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/tab.self-3b3ea7e792506b46b49ca1b93db5b02a8e8f37750bc36c99094449d0cebc2e70.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui/transition.self-bab4c5ca050c72b8a296d1b892de0249a294d699522326638f2c33d31b23f770.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/semantic-ui.self-6e0ce65031e802f83e9c1e92b66a459ada9f1f5f6522ba6c8d8198228fd219c3.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/action_cable.self-69fddfcddf4fdef9828648f9330d6ce108b93b82b0b8d3affffc59a114853451.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/cable.self-8484513823f404ed0c0f039f75243bfdede7af7919dda65f2e66391252443ce9.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/application.self-bd9e6b4db4877e663db4895617a2815a7e5edcdd0388c42e6b3d030ccca56e9f.js?body=1" data-turbolinks-track="reload"></script>
+  </head>
+
+  <body>
+    <div class="ui small inverted menu">
+      <div class="ui container">
+        <a class="item" href="/">Chatroom</a>
+<a class="item">
+  Messages
+</a>
+<div class="right menu">
+  <div class="ui dropdown item">
+    Account  <i class="dropdown icon"></i>
+    <div class="menu">
+        <a class="item" href="/login">Log in</a>
+        <a class="item">Sign up</a>
+    </div>
+  </div>
+    <div class="item">
+      <a class="ui primary button" href="/login">Sign Up</a>
+    </div>
+</div>
+
+      </div>
+    </div>
+    <div class="ui container">
+        <div class="ui success message transition">
+    <i class="close icon"></i>
+    <div class="header">
+      You have successfully logged out
+    </div>
+  </div>
+
+      <h4 class="ui center aligned medium icon header">
+  <i class="circular orange power icon"></i>
+  Log in to continue
+</h4>
+
+<div class="ui placeholder segment">
+  <div class="ui two column very relaxed stackable grid">
+    <div class="column">
+      <form class="ui form" action="/login" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="hNkUwrVNLPt2FOciYQBPUxZkV8CMAWZm3pZ3lwVKwCMPIsmFUhEt3sfdIPHFp8Z1CSsOXlDXoGYHMwNjFIFCZg==" />
+        <div class="field">
+          <label for="Username">Username</label>
+          <div class="ui left icon input">
+            <input type="text" name="username" id="username" placeholder="Username" />
+            <i class="user icon"></i>
+          </div>
+        </div>
+        <div class="field">
+          <label for="Password">Password</label>
+          <div class="ui left icon input">
+            <input type="password" name="password" id="password" placeholder="Password" />
+            <i class="lock icon"></i>
+          </div>
+        </div>
+        <input type="submit" name="commit" value="Login" class="ui orange submit button login" data-disable-with="Login" />
+</form>    </div>
+    <div class="middle aligned column">
+      <div class="ui big orange button">
+        <i class="signup icon"></i>
+        Sign Up
+      </div>
+    </div>
+  </div>
+  <div class="ui vertical divider">
+    Or
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>
