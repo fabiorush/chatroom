@@ -2,10 +2,15 @@ class MessagesController < ApplicationController
   before_action :require_user
 
   def create
-    message_body = params[:body]
-    if message_body
-      Message.create(body: message_body, user: current_user)
+    message = Message.new(body: params[:body], user: current_user) if params[:body]
+    if message.save
+      ActionCable.server.broadcast "chatroom_channel", msg_line: message_render(message)
     end
-    redirect_to root_path
+  end
+
+  private
+
+  def message_render(msg)
+    render partial: 'message', locals: {message: msg}
   end
 end

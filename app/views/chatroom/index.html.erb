@@ -7,16 +7,16 @@
 
   <div class="twelve wide column">
     <div class="ui fluid raised card chatbox">
-      <div class="content">
-        <div class="ui feed">
+      <div id="content-box" class="content">
+        <div id="msgbox" class="ui feed">
           <%=  render @messages %>
         </div>
       </div>
       <div class="extra content">
-        <%= form_with url: message_path, class: "ui reply form" do %>
+        <%= form_with url: message_path, remote: true, class: "ui reply form" do %>
           <div class="field">
             <div class="ui fluid icon input">
-              <%= text_field_tag :body, nil, placeholder: "Enter a message..." %>
+              <%= text_field_tag :body, nil, placeholder: "Enter a message...", id: "text-box" %>
               <%= button_tag type: 'submit' do
                 "<i class=\"bordered inverted orange edit icon\"></i>".html_safe
               end %>
